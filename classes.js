@@ -6,16 +6,16 @@ class Employee{
     }
 
     getName(){
-        console.log(this.name)
+       return this.name;
     }
     getID(){
-        console.log(this.ID)
+        return this.ID
     }
     getEmail(){
-        console.log(this.email)
+        return this.email
     }
     getRole(){
-        console.log(this.role)
+        return "Employee";
     }
     
 }
@@ -24,6 +24,10 @@ class Manager extends Employee{
     constructor(name, ID, Email, officeNumber){
         super(name, ID, Email);
         this.officeNumber = officeNumber;
+    }
+
+    getOfficeNumber() {
+        return this.officeNumber;
     }
     getRole(){
         return "Manager";
